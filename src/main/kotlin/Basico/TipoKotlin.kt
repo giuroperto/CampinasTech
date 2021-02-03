@@ -1,4 +1,4 @@
-package Basico
+package basico
 
 fun main() {
 
@@ -29,6 +29,8 @@ fun main() {
     val num7: Char = 'A' // suporta so um caractere
     val num8: Boolean = true // por default e sempre false
     val num9: String = "" // como char mas suporta mais caracteres
+
+    val num10: Any // pode ser qualquer coisa/qualquer tipo -> perigoso pois pode incorrer em erros nao previsiveis
 
     println(2 is Int) // para fazer validacao de tipo em Kotlin is
     println(num1.dec()) // decrementar
