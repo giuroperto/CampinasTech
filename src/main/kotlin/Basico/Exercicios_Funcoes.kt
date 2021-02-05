@@ -46,9 +46,9 @@ fun ex4(raio: Double): Double {
 // "Lista de Pessoas sao: [Carlos, Huelton]"
 
 fun ex5(n1: String, n2: String): String {
-    val response: String = "Lista de Pessoas sao: [$n2, $n1]"
+    val lista = listOf<String>(n1, n2)
 
-    return response
+    return "Lista de Pessoas sao: ${lista.asReversed()}"
 }
 
 // 6) Crie uma template string que mostre a segunda nota de um aluno, pode usar listOf. Digite o nome e as notas do aluno.
@@ -97,8 +97,8 @@ fun main() {
 //    ex6()
 //    println(ex7())
 
-    println("Digite o nome:")
-    val nome: String = Scanner(System.`in`).nextLine()
-    println(ex8(nome))
-    println(ex8())
+//    println("Digite o nome:")
+//    val nome: String = Scanner(System.`in`).nextLine()
+//    println(ex8(nome))
+//    println(ex8())
 }

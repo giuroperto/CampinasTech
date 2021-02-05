@@ -4,6 +4,14 @@ package basico
 // ENTRADA huelton, carlos, jose
 // SAIDA jose, carlos, huelton
 
+fun ex1(): List<String> {
+    val list = listOf("huelton", "carlos", "jose", "giulia")
+
+    val reversed = list.reversed()
+
+    return reversed
+}
+
 // 2) Faca uma funcao que recebe 4 notas e mostre a media do aluno na tela:
 // A media do aluno e:
 // Use funcao e lista para poder criar o arquivo
@@ -23,5 +31,6 @@ package basico
 
 
 fun main() {
+    println(ex1())
 
 }
