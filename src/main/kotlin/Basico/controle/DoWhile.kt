@@ -8,7 +8,7 @@ fun main() {
     var opcao: String = ""
 
 //    while (opcao != "N" && opcao != "n")
-    while (opcao.toUpperCase() != "N") {
+    do {
 
         // regra dentro do while
 
@@ -18,7 +18,6 @@ fun main() {
 
         println("Continuar dentro do while? S/N")
         opcao = readLine() ?: "N"
-    }
+    } while (opcao.toUpperCase() != "N")
     println(valores)
 }
-

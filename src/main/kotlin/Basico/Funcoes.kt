@@ -12,6 +12,9 @@ fun main() {
     println(multiplicaDoisNumeros(1.1,3.5));
     println(multiplicacaoDoisNumeros2(1.1,3.5));
     lista();
+
+    // argumentos/parametros nomeados
+    println(nivelHierarquico(chefe = "Maria", funcionario = "Jose"))
 }
 
 //funcao sem retorno
@@ -84,4 +87,8 @@ fun mostraLista(compras: MutableList<String>): MutableList<String> {
     // tipo de retorno pode ser igual ou ANY
     return compras;
 
+}
+
+fun nivelHierarquico(funcionario: String = "Jose", chefe: String = "Claudia"): String {
+    return "$funcionario e submisso(a) a $chefe"
 }

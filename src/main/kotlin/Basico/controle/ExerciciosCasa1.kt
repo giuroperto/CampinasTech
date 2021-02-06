@@ -81,30 +81,30 @@ fun ex3(litros: Double, tipoCombustivel: String): Double {
 // Escreva um programa para ler a quantidade (em kg) de morangos e a quantidade (em kg) de macas adquirdas, e escreva o valor a ser pago
 // pelo cliente. Use funcao.
 
-//fun ex4(kgMorango: Double, kgMaca: Double ): Double {
-//    var totalSemDesconto: Double
-//    var precoMorango: Double?
-//    var precoMaca: Double?
-//
-//    if (kgMorango <= 5) {
-//        precoMorango = 5.5
-//    } else {
-//        precoMorango = 5.2
-//    }
-//
-//    if (kgMaca <= 5) {
-//        precoMaca = 3.8
-//    } else {
-//        precoMaca = 3.5
-//    }
-//
-//    totalSemDesconto = kgMorango * precoMorango + kgMaca * precoMaca
-//
-//    if (kgMaca + kgMorango)
-//
-//
-//
-//}
+fun ex4(kgMorango: Double, kgMaca: Double ): Double {
+    var totalSemDesconto: Double
+    var precoMorango: Double?
+    var precoMaca: Double?
+
+    if (kgMorango <= 5) {
+        precoMorango = 5.5
+    } else {
+        precoMorango = 5.2
+    }
+
+    if (kgMaca <= 5) {
+        precoMaca = 3.8
+    } else {
+        precoMaca = 3.5
+    }
+
+    totalSemDesconto = kgMorango * precoMorango + kgMaca * precoMaca
+
+    if (kgMaca + kgMorango > 8 || totalSemDesconto > 25) totalSemDesconto *= 0.9
+
+    return totalSemDesconto
+
+}
 
 
 fun main() {
@@ -115,24 +115,32 @@ fun main() {
 //    println("Digite o salario por hora")
 //    val valorHora: Double = Scanner(System.`in`).nextDouble()
 //    println(ex2(horasTrabalhadas, valorHora))
+//
+//    println("-------------------------------------------")
+//    println("-------------------------------------------")
+//    println("----------------POSTOS XELL----------------")
+//    println("-------------------------------------------")
+//    println("-------------------------------------------")
+//    println("Digite o tipo de combustivel")
+//    val tipoComb: String = Scanner(System.`in`).nextLine()
+//    println("-------------------------------------------")
+//    println("Perfeito. Agora digite quantos litros de $tipoComb foi abastecido")
+//    val litrosComb: Double = Scanner(System.`in`).nextDouble()
+//    println("-------------------------------------------")
+//    println("Abastecendo $litrosComb LITROS de $tipoComb. Valor total:")
+//    val response: Double = ex3(litrosComb, tipoComb)
+//    if (response > 0) {
+//        println("O preco total a ser pago pelo cliente e de R$ $response")
+//    } else {
+//        println("Tipo de combustivel nao identificado")
+//    }
 
-    println("-------------------------------------------")
-    println("-------------------------------------------")
-    println("----------------POSTOS XELL----------------")
-    println("-------------------------------------------")
-    println("-------------------------------------------")
-    println("Digite o tipo de combustivel")
-    val tipoComb: String = Scanner(System.`in`).nextLine()
-    println("-------------------------------------------")
-    println("Perfeito. Agora digite quantos litros de $tipoComb foi abastecido")
-    val litrosComb: Double = Scanner(System.`in`).nextDouble()
-    println("-------------------------------------------")
-    println("Abastecendo $litrosComb LITROS de $tipoComb. Valor total:")
-    val response: Double = ex3(litrosComb, tipoComb)
-    if (response > 0) {
-        println("O preco total a ser pago pelo cliente e de R$ $response")
-    } else {
-        println("Tipo de combustivel nao identificado")
-    }
-//    ex4()
+    val qtdMorangos: Double
+    val qtdMacas: Double
+    println("Digite a quantidade de morangos")
+    qtdMorangos = readLine()!!.toDouble()
+    println("Digite a quantidade de macas")
+    qtdMacas = readLine()!!.toDouble()
+
+    println(ex4(qtdMorangos, qtdMacas))
 }
