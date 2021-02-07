@@ -95,11 +95,15 @@ fun ex4(): String {
 //
 //    println("Nome do produto" + compras[0] + " Quantidade: " + compras[1] + " Valor Unitario: "
 //            + compras[2] + " Valor Total: " + multiplicar(quantidade, valor))
+    // funcao de multiplicar tem que ser multiplicaCompra(compras[1].toString(), compras[2].toString())
 }
 
 fun multiplicar(a: Int, b: Double): Double {
     return a * b
 }
+
+// outra forma de fazer essa formula
+//fun multiplicaCompra(x: String, y: String): Any = x.toDouble() * y.toDouble()
 
 // nao consegue fazer a multiplicacao de dois numeros em uma lista -> funcao para multiplicar
 
