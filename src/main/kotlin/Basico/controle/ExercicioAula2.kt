@@ -87,6 +87,17 @@ fun ex2() {
         i += 1
     }
 
+    // outra solucao:
+//    for (i in 0 until numeroItems) {
+//    val numero: Double
+//        println("Digite o numero a ser adicionado a lista")
+//        numero = readLine()!!.toDouble()
+//        listaNumeros.add(numero)
+//      }
+
+//      para calculo da media: listaNumeros.average()
+//    para verificar maior numero: listaNumeros.maxOrNull()
+
     val maiorNumero: Double = listaNumeros.max() ?: 0.0
     val mediaNumeros: Double = soma / numeroItems
 
